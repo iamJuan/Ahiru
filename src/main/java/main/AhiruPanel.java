@@ -15,10 +15,7 @@ import java.awt.event.MouseMotionAdapter;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Random;
+import java.util.*;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -89,12 +86,12 @@ public class AhiruPanel extends JPanel implements Runnable{
 	//entities
 	private WorldCreation worldCreated;
 	
-	private ArrayList<Gun> currentGun;
-	private ArrayList<Gun> gunA; 
-	private ArrayList<Gun> gunB; 
-	private ArrayList<Gun> gunC; 
-	private ArrayList<Ammo> shots;
-	private ArrayList<Score> scoreBoard;
+	private List<Gun> currentGun;
+	private List<Gun> gunA;
+	private List<Gun> gunB;
+	private List<Gun> gunC;
+	private List<Ammo> shots;
+	private List<Score> scoreBoard;
 	private HashMap<String,Integer> iceTimer;
 	private int[] starCount;
 	private HashMap<Integer, Stars[]> starMap;

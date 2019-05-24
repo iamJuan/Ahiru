@@ -1,6 +1,6 @@
 package entities;
 
-import static utilities.EntityConstants.*;
+import static utilities.GameConstants.*;
 
 public class DuckFactory {
 

@@ -2,6 +2,7 @@ package main;
 
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import entities.*;
@@ -11,7 +12,7 @@ import settings.WoodUpper;
 import userinterface.*;
 import utilities.ImageLoader;
 
-import static utilities.EntityConstants.*;
+import static utilities.GameConstants.*;
 
 public class WorldCreation {
 	
@@ -19,10 +20,7 @@ public class WorldCreation {
 	private int duckPopulationR = 0;
 	private int ammoStored[][] = {{20,0,0,0},  {30,0,0,0},  {20,20,0,0},  {30,35,0,0}, {25,30,0,0},  {60,25,0,0},  	{25,50,0,0},  {40,70,0,0},  {20,50,20,0},  {20,30,25,0},  {20,40,40,0}, {20,45,55,0}};
 	private int duckSpawns[][] = {{10,0,0,0,0},{15,5,0,0,0},{10,25,0,0,0},{5,45,0,0,0},{5,35,5,0,0} ,{0,30,25,0,0} ,{0,15,40,0,0},{0,20,50,0,0},{0,20,30,10,0},{0,10,10,25,0},{0,0,30,40,0},{0,0,44,55,0}};
-	private final int SCENE_SPLASH = 1;
-	private final int SCENE_LEVEL_SELECTION = 2;
-	private final int SCENE_LEVEL = 3;
-	
+
 	private static ImageLoader imgLoader;
 	private Background background;
 	private SplashScreen splashScreen;
@@ -34,25 +32,25 @@ public class WorldCreation {
 	private PauseBoard pauseBoard;
 	private GameProgress gameProgress;
 	private Instruction instruction;
-	private ArrayList<Wood> woods;
-	private ArrayList<Wave> waves;
-	private ArrayList<Levels> levels;
-	private ArrayList<Gun> gunA;
-	private ArrayList<Gun> gunB;
-	private ArrayList<Gun> gunC;
-	private ArrayList<Duck> duckLeft;
-	private ArrayList<Duck> duckRight;
-	private ArrayList<Integer> stateIteratorL;
-	private ArrayList<Integer> stateIteratorR;
+	private List<Wood> woods;
+	private List<Wave> waves;
+	private List<Levels> levels;
+	private List<Gun> gunA;
+	private List<Gun> gunB;
+	private List<Gun> gunC;
+	private List<Duck> duckLeft;
+	private List<Duck> duckRight;
+	private List<Integer> stateIteratorL;
+	private List<Integer> stateIteratorR;
 	
 	private LevelNumber lvlNo[];
 	private LevelNumber bestScore[];
-	private BufferedImage[] duckStatesL;
-	private BufferedImage[] duckStatesR;
+	private List<BufferedImage> duckStatesL;
+	private List<BufferedImage> duckStatesR;
 	private BufferedImage[] numbers;
 	//for display only
-	private ArrayList<Ammo> ammos;
-	private ArrayList<Integer> ammoStorage;
+	private List<Ammo> ammos;
+	private List<Integer> ammoStorage;
 	private BufferedImage scoreStick;
 	private BufferedImage scoreFive;
 	
@@ -60,108 +58,154 @@ public class WorldCreation {
 	
 	public WorldCreation(){}
 
-	public void load(int sc, int currentLevel){
+	public void load(int scene, int currentLevel){
 		//load materials
-		if(sc == SCENE_SPLASH){
-			imgLoader = new ImageLoader("splashScreen.txt");
+		if(scene == SCENE_SPLASH){
+			showScreenState("splashScreen.txt");
 			//create objects for splash screen/first scene
-			background = new Background();
-			background.create("backgroundintro");
+			createBackground("backgroundintro");
+
+			setSplashScreen();
+
+			createMenu();
 			
-			splashScreen = new SplashScreen();
-			splashScreen.create("splashScreen");
-			splashScreen.setX(100);
-			splashScreen.setY(50);
-			
-			menu = new MainMenu();
-			menu.create("play");
-			menu.setX(250);
-			menu.setY(370);
-			
-		}else if(sc == SCENE_LEVEL_SELECTION){
-			imgLoader = new ImageLoader("levelSelect.txt");
+		}else if(scene == SCENE_LEVEL_SELECTION){
+			showScreenState("levelSelect.txt");
 			//create objects for level selection
-			background = new Background();
-			background.create("levelselectbg");
-			
-			instruction = new Instruction();
-			instruction.create("inst"+instruction.getCurrentPage());
-			instruction.setX(0);
-			instruction.setY(0);
-			
-			levels = new ArrayList<Levels>();
-			
-			for (int levelIter = 0; levelIter < 12; levelIter++) {
-				levels.add(new Levels());
-				levels.get(levelIter).create("lvl"+(levelIter+1));
-				if(levelIter < 4){
-					levels.get(levelIter).setX(35 + (levelIter * 165));
-					levels.get(levelIter).setY(40);
-				}else if(levelIter < 8){
-					levels.get(levelIter).setX(35 + ((levelIter-4) * 165));
-					levels.get(levelIter).setY(200);
-				}else{
-					levels.get(levelIter).setX(35 + ((levelIter-8) * 165));
-					levels.get(levelIter).setY(365);
-				}
-			}
+			createBackground("levelselectbg");
+
+			createInstruction();
+
+			createLevels();
 			
 			
-		}else if(sc == SCENE_LEVEL){
+		}else if(scene == SCENE_LEVEL){
 			imgLoader = new ImageLoader("level"+currentLevel+".txt");
 			state = new State();
 			//create objects for level
-			background = new Background();
-			background.create("background");
-			
-			scoreStick = imgLoader.getImage("stick");
-			scoreFive  = imgLoader.getImage("stick5");
-			
-			scoreBoard = new ScoreBoard();
-			scoreBoard.setX(140);
-			scoreBoard.setY(150);
-			
-			pauseBoard = new PauseBoard();
-			pauseBoard.create("paused");
-			pauseBoard.setX(140);
-			pauseBoard.setY(150);
-			
-			lvlNo = new LevelNumber[2];
-			
-			lvlNo[0] = new LevelNumber();
-			lvlNo[0].create("levelNumberZero");
-			lvlNo[0].setX(640);
-			lvlNo[0].setY(25);
+			createBackground("background");
 
-			lvlNo[1] = new LevelNumber();
-			lvlNo[1].create("levelNumberZero");
-			lvlNo[1].setX(655);
-			lvlNo[1].setY(25);
-			
-			bestScore = new LevelNumber[2];
-			
-			bestScore[0] = new LevelNumber();
-			bestScore[0].create("levelNumberZero");
-			bestScore[0].setX(430);
-			bestScore[0].setY(240);
+			createScoreStick();
 
-			bestScore[1] = new LevelNumber();
-			bestScore[1].create("levelNumberZero");
-			bestScore[1].setX(445);
-			bestScore[1].setY(240);
+			createScoreBoard();
+
+			createPauseBoard();
+
+			createLevelNoDisplay();
+
+			createBestScore();
+
+			createGameProgress();
 			
-			gameProgress = new GameProgress();
-			gameProgress.create("gameProgress");
-			gameProgress.setX(660);
-			gameProgress.setY(75);
-			
-			createStates();
-			createUserInterface(currentLevel);
+			createDuckStates();
+			setGame(currentLevel);
 			createDucks(currentLevel);
 			createAmmos(currentLevel);			
 			createNumbers();
 		}
 	}//end of load(Scene)w
+
+	private void createGameProgress() {
+		gameProgress = new GameProgress();
+		gameProgress.create("gameProgress");
+		gameProgress.setX(660);
+		gameProgress.setY(75);
+	}
+
+	private void createBestScore() {
+		bestScore = new LevelNumber[2];
+
+		bestScore[0] = new LevelNumber();
+		bestScore[0].create("levelNumberZero");
+		bestScore[0].setX(430);
+		bestScore[0].setY(240);
+
+		bestScore[1] = new LevelNumber();
+		bestScore[1].create("levelNumberZero");
+		bestScore[1].setX(445);
+		bestScore[1].setY(240);
+	}
+
+	private void createPauseBoard() {
+		pauseBoard = new PauseBoard();
+		pauseBoard.create("paused");
+		pauseBoard.setX(140);
+		pauseBoard.setY(150);
+	}
+
+	private void createScoreBoard() {
+		scoreBoard = new ScoreBoard();
+		scoreBoard.setX(140);
+		scoreBoard.setY(150);
+	}
+
+	private void createScoreStick() {
+		scoreStick = imgLoader.getImage("stick");
+		scoreFive  = imgLoader.getImage("stick5");
+	}
+
+	private void createLevelNoDisplay() {
+		lvlNo = new LevelNumber[2];
+
+		lvlNo[0] = new LevelNumber();
+		lvlNo[0].create("levelNumberZero");
+		lvlNo[0].setX(640);
+		lvlNo[0].setY(25);
+
+		lvlNo[1] = new LevelNumber();
+		lvlNo[1].create("levelNumberZero");
+		lvlNo[1].setX(655);
+		lvlNo[1].setY(25);
+	}
+
+	private void createLevels() {
+		levels = new ArrayList<Levels>();
+
+		for (int levelIter = 0; levelIter < 12; levelIter++) {
+			levels.add(new Levels());
+			levels.get(levelIter).create("lvl"+(levelIter+1));
+			if(levelIter < 4){
+				levels.get(levelIter).setX(35 + (levelIter * 165));
+				levels.get(levelIter).setY(40);
+			}else if(levelIter < 8){
+				levels.get(levelIter).setX(35 + ((levelIter-4) * 165));
+				levels.get(levelIter).setY(200);
+			}else{
+				levels.get(levelIter).setX(35 + ((levelIter-8) * 165));
+				levels.get(levelIter).setY(365);
+			}
+		}
+	}
+
+	private void createInstruction() {
+		instruction = new Instruction();
+		instruction.create("inst"+instruction.getCurrentPage());
+		instruction.setX(0);
+		instruction.setY(0);
+	}
+
+	private void createMenu() {
+		menu = new MainMenu();
+		menu.create("play");
+		menu.setX(250);
+		menu.setY(370);
+	}
+
+	private void setSplashScreen() {
+		splashScreen = new SplashScreen();
+		splashScreen.create("splashScreen");
+		splashScreen.setX(100);
+		splashScreen.setY(50);
+	}
+
+	private void createBackground(String backgroundintro) {
+		background = new Background();
+		background.create(backgroundintro);
+	}
+
+	private void showScreenState(String s) {
+		imgLoader = new ImageLoader(s);
+	}
 
 	private void createNumbers() {
 		numbers = new BufferedImage[10];
@@ -207,32 +251,32 @@ public class WorldCreation {
 		ammoStorage.add(ball);
 	}
 
-	private void createStates() {
+	private void createDuckStates() {
 
-		duckStatesL = new BufferedImage[6];
-		duckStatesR = new BufferedImage[6];
+		duckStatesL = new ArrayList<BufferedImage>(6);
+		duckStatesR = new ArrayList<BufferedImage>(6);
 		 
-		duckStatesL[0] = imgLoader.getImage("easyLeftFallen1");
-		duckStatesL[1] = imgLoader.getImage("easyLeftFallen2");
-		duckStatesL[2] = imgLoader.getImage("easyLeftFallen3");
-		duckStatesL[3] = imgLoader.getImage("easyLeftFallen4");
-		duckStatesL[4] = imgLoader.getImage("easyLeftFallen5");
-		duckStatesL[5] = imgLoader.getImage("easyLeftFallen6");
+		duckStatesL.add(imgLoader.getImage("easyLeftFallen1"));
+		duckStatesL.add(imgLoader.getImage("easyLeftFallen2"));
+		duckStatesL.add(imgLoader.getImage("easyLeftFallen3"));
+		duckStatesL.add(imgLoader.getImage("easyLeftFallen4"));
+		duckStatesL.add(imgLoader.getImage("easyLeftFallen5"));
+		duckStatesL.add(imgLoader.getImage("easyLeftFallen6"));
 
-		duckStatesR[0] = imgLoader.getImage("easyRightFallen1");
-		duckStatesR[1] = imgLoader.getImage("easyRightFallen2");
-		duckStatesR[2] = imgLoader.getImage("easyRightFallen3");
-		duckStatesR[3] = imgLoader.getImage("easyRightFallen4");
-		duckStatesR[4] = imgLoader.getImage("easyRightFallen5");
-		duckStatesR[5] = imgLoader.getImage("easyRightFallen6");
+		duckStatesR.add(imgLoader.getImage("easyRightFallen1"));
+		duckStatesR.add(imgLoader.getImage("easyRightFallen2"));
+		duckStatesR.add(imgLoader.getImage("easyRightFallen3"));
+		duckStatesR.add(imgLoader.getImage("easyRightFallen4"));
+		duckStatesR.add(imgLoader.getImage("easyRightFallen5"));
+		duckStatesR.add(imgLoader.getImage("easyRightFallen6"));
 	}
 	
-	private void createUserInterface(int level) {
+	private void setGame(int level) {
 		//objects excluding the ducks will be created here
 		woods = new ArrayList<Wood>();
-		 waves = new ArrayList<Wave>();
+		waves = new ArrayList<Wave>();
 		int noOfWavesAndWoods = 0;
-		
+
 		if(level == 1){
 			noOfWavesAndWoods = 1;
 		}else if(level == 2 || level == 3 || level == 5 || level == 9){
@@ -240,6 +284,7 @@ public class WorldCreation {
 		}else if(level == 4 || level == 6  || level == 7 || level == 8 || level == 10 || level == 11 || level == 12){
 			noOfWavesAndWoods = 3;
 		}
+
 		for (int i = 0; i < noOfWavesAndWoods; i++) {
 			
 			waves.add(new Wave(-15,430 - (i*100)));
@@ -278,7 +323,7 @@ public class WorldCreation {
 		
 		bullsEye = new BullsEye();
 		bullsEye.create("bullsEye");
-	}//end of createUserInterface
+	}//end of setGame
 
 	private void createDucks(int currentLevel) {
 		//duck factory
@@ -287,132 +332,146 @@ public class WorldCreation {
 		stateIteratorL = new ArrayList<Integer>();
 		stateIteratorR = new ArrayList<Integer>();
 		
-		for	(int iterDuckType = 0; iterDuckType < 5; iterDuckType++){
+		for	(int iterDuckType = 0; iterDuckType < 4; iterDuckType++){
 
 			for (int duckSpawnsIter = 0; duckSpawnsIter < duckSpawns[currentLevel-1][iterDuckType]; duckSpawnsIter++) { //(noOfDucks[currentLevel-1]) get the no of ducks that will be assigned to each level
 
-				int whichLane = 0;
-				int lane = 0;
-				int life = 0;
-				int speed = 0;
-				int distance = 0;
-				String imageName = "", number = "";
-
-				if(currentLevel == 1){
-					whichLane = 0;
-				}else if(currentLevel == 2 || currentLevel == 3 || currentLevel == 5 || currentLevel == 9){
-					whichLane = rand.nextInt(2);
-				}else if(currentLevel == 4 || currentLevel == 6 || currentLevel == 7 || currentLevel == 8 || currentLevel == 10 || currentLevel == 11 || currentLevel == 12){
-					whichLane = rand.nextInt(3);
-				}
-
-				if(whichLane == 0){
-					lane = 375;
-				}else if(whichLane == 1){
-					lane = 275;
-				}else if(whichLane == 2){
-					lane = 175;
-				}
+				int laneNo = getLaneNo(currentLevel);
+				int lane = getLane(laneNo);
 
 
-				if(iterDuckType == EASY){
-					life = 1;
-					imageName = EASY_DUCK;
-					speed = 2;
-					number = "";
-					distance = 200;
-				}else if(iterDuckType == HELM){
-					life = 2;
-					imageName = HELM_DUCK;
-					speed = 2;
-					number = "";
-					distance = 300;
-				}else if(iterDuckType == KNIGHT){
-					life = 3;
-					imageName = KNIGHT_DUCK;
-					speed = 2;
-					number = "1";
-					distance = 400;
-				}else if(iterDuckType == CLOWN){
-					life = 1;
-					imageName = CLOWN_DUCK;
-					speed = 3;
-					number = "";
-					distance = 700;
-				}
-
-				int rightOrLeft = rand.nextInt(2)+1;//generate a random number( 1 or 2) left or right
-
-				if(rightOrLeft == 1){//if 1 is generated, a duck facing left will be created.
-
-					if(iterDuckType == 0){
-						duckLeft.add(DuckFactory.getDuck(EASY_DUCK,1200, lane));//create and add a new Duck Object
-					}else if(iterDuckType == 1){
-						duckLeft.add(DuckFactory.getDuck(HELM_DUCK,1200, lane));//create and add a new Duck Object
-					}else if(iterDuckType == 2){
-						duckLeft.add(DuckFactory.getDuck(KNIGHT_DUCK,1200, lane));//create and add a new Duck Object
-					}else if(iterDuckType == 3){
-						duckLeft.add(DuckFactory.getDuck(CLOWN_DUCK,1200, lane));//create and add a new Duck Object
-					}
-
-					duckLeft.get(duckPopulationL).setAlive(true);
-					duckLeft.get(duckPopulationL).setLife(life);
-					duckLeft.get(duckPopulationL).create(imageName+"Left"+number);//get the prevAddedDuck and create its image
-					duckLeft.get(duckPopulationL).setSpeed(speed);
-					stateIteratorL.add(0);
-
-					//this will create the x-distances between ducks
-					if(duckPopulationL > 0){
-						duckLeft.get(duckPopulationL).setX(duckLeft.get(duckPopulationL-1).getX() + (rand.nextInt(200)+distance));
-					}
-
-					duckPopulationL++;//add the population of duck facing left
-
-
-				}else if(rightOrLeft == 2){//same goes here
-
-					if(iterDuckType == 0){
-						duckRight.add(DuckFactory.getDuck(EASY_DUCK,-1200, lane));//create and add a new Duck Object
-					}else if(iterDuckType == 1){
-						duckRight.add(DuckFactory.getDuck(HELM_DUCK,-1200, lane));//create and add a new Duck Object
-					}else if(iterDuckType == 2){
-						duckRight.add(DuckFactory.getDuck(KNIGHT_DUCK,-1200, lane));//create and add a new Duck Object
-					}else if(iterDuckType == 3){
-						duckRight.add(DuckFactory.getDuck(CLOWN_DUCK,-1200, lane));//create and add a new Duck Object
-					}
-
-					duckRight.get(duckPopulationR).setAlive(true);
-					duckRight.get(duckPopulationR).setLife(life);
-					duckRight.get(duckPopulationR).create(imageName+"Right"+number);
-					duckRight.get(duckPopulationR).setSpeed(speed);
-					stateIteratorR.add(0);
-
-					if(duckPopulationR > 0){
-						duckRight.get(duckPopulationR).setX(duckRight.get(duckPopulationR-1).getX() - (rand.nextInt(200)+distance));
-					}
-
-					duckPopulationR++;
-				}
+				setupDucks(iterDuckType, lane);
 
 			}
 		}
 	}//createDucks
-	
-	public void unload(int sc){
+
+	private void setupDucks(int iterDuckType, int lane) {
+		int life = 0;
+		int speed = 0;
+		int distance = 0;
+		String imageName = "", number = "";
+
+		if(iterDuckType == EASY){
+			life = 1;
+			speed = 2;
+			distance = 200;
+			imageName = EASY_DUCK;
+			number = "";
+		}else if(iterDuckType == HELM){
+			life = 2;
+			speed = 2;
+			distance = 300;
+			imageName = HELM_DUCK;
+			number = "";
+		}else if(iterDuckType == KNIGHT){
+			life = 3;
+			speed = 2;
+			distance = 400;
+			imageName = KNIGHT_DUCK;
+			number = "1";
+		}else if(iterDuckType == CLOWN){
+			life = 1;
+			speed = 3;
+			distance = 700;
+			imageName = CLOWN_DUCK;
+			number = "";
+		}
+
+		int rightOrLeft = rand.nextInt(2)+1;//generate a random number( 1 or 2) left or right
+
+		if(rightOrLeft == 1){//if 1 is generated, a duck facing left will be created.
+
+			if(iterDuckType == EASY){
+				duckLeft.add(DuckFactory.getDuck(EASY_DUCK,1200, lane));//create and add a new Duck Object
+			}else if(iterDuckType == HELM){
+				duckLeft.add(DuckFactory.getDuck(HELM_DUCK,1200, lane));//create and add a new Duck Object
+			}else if(iterDuckType == KNIGHT){
+				duckLeft.add(DuckFactory.getDuck(KNIGHT_DUCK,1200, lane));//create and add a new Duck Object
+			}else if(iterDuckType == CLOWN){
+				duckLeft.add(DuckFactory.getDuck(CLOWN_DUCK,1200, lane));//create and add a new Duck Object
+			}
+
+			duckLeft.get(duckPopulationL).setAlive(true);
+			duckLeft.get(duckPopulationL).setLife(life);
+			duckLeft.get(duckPopulationL).create(imageName+"Left"+number);//get the prevAddedDuck and create its image
+			duckLeft.get(duckPopulationL).setSpeed(speed);
+			stateIteratorL.add(0);
+
+			//this will create the x-distances between ducks
+			if(duckPopulationL > 0){
+				duckLeft.get(duckPopulationL).setX(duckLeft.get(duckPopulationL-1).getX() + (rand.nextInt(200)+distance));
+			}
+
+			duckPopulationL++;//add the population of duck facing left
+
+
+		}else if(rightOrLeft == 2){//same goes here
+
+			if(iterDuckType == 0){
+				duckRight.add(DuckFactory.getDuck(EASY_DUCK,-1200, lane));//create and add a new Duck Object
+			}else if(iterDuckType == 1){
+				duckRight.add(DuckFactory.getDuck(HELM_DUCK,-1200, lane));//create and add a new Duck Object
+			}else if(iterDuckType == 2){
+				duckRight.add(DuckFactory.getDuck(KNIGHT_DUCK,-1200, lane));//create and add a new Duck Object
+			}else if(iterDuckType == 3){
+				duckRight.add(DuckFactory.getDuck(CLOWN_DUCK,-1200, lane));//create and add a new Duck Object
+			}
+
+			duckRight.get(duckPopulationR).setAlive(true);
+			duckRight.get(duckPopulationR).setLife(life);
+			duckRight.get(duckPopulationR).create(imageName+"Right"+number);
+			duckRight.get(duckPopulationR).setSpeed(speed);
+			stateIteratorR.add(0);
+
+			if(duckPopulationR > 0){
+				duckRight.get(duckPopulationR).setX(duckRight.get(duckPopulationR-1).getX() - (rand.nextInt(200)+distance));
+			}
+
+			duckPopulationR++;
+		}
+	}
+
+
+	private int getLane(int laneNo) {
+		int lane = 0;
+		if(laneNo == 0){
+			lane = 375;
+		}else if(laneNo == 1){
+			lane = 275;
+		}else if(laneNo == 2){
+			lane = 175;
+		}
+		return lane;
+	}
+
+	private int getLaneNo(int currentLevel) {
+		int laneNo = 0;
+		if(currentLevel == 1){
+			laneNo = 0;
+		}else if(currentLevel == 2 || currentLevel == 3 || currentLevel == 5 || currentLevel == 9){
+			laneNo = rand.nextInt(2);
+		}else if(currentLevel == 4 || currentLevel == 6 || currentLevel == 7 || currentLevel == 8 || currentLevel == 10 || currentLevel == 11 || currentLevel == 12){
+			laneNo = rand.nextInt(3);
+		}
+		return laneNo;
+	}
+
+	public void unload(int scene){
 		//unload materials
-		if(sc == SCENE_SPLASH){
+		if(scene == SCENE_SPLASH){
 			//dispose materials from splash before accessing levelselect
 			imgLoader = null;
 			background = null;
 			splashScreen = null;
 			
-		}else if(sc == SCENE_LEVEL_SELECTION){
+		}else if(scene == SCENE_LEVEL_SELECTION){
 			//dispose materials from levelselect before accessing a certain level or going back to splash
 			imgLoader = null;
 			background = null;
 			levels = null;
 			
-		}else if(sc == SCENE_LEVEL){
+		}else if(scene == SCENE_LEVEL){
 			//dispose materials from level before going to any scenes\
 			imgLoader = null;
 			background = null;
@@ -426,20 +485,9 @@ public class WorldCreation {
 			
 			gameProgress = null;
 			numbers = null;
-			
-			duckStatesL[0].flush();
-			duckStatesL[1].flush();
-			duckStatesL[2].flush();
-			duckStatesL[3].flush();
-			duckStatesL[4].flush();
-			duckStatesL[5].flush();
 
-			duckStatesR[0].flush();
-			duckStatesR[1].flush();
-			duckStatesR[2].flush();
-			duckStatesR[3].flush();
-			duckStatesR[4].flush();
-			duckStatesR[5].flush();
+			duckStatesL = null;
+			duckStatesR = null;
 
 			waves = null;
 			woods = null;
@@ -504,35 +552,35 @@ public class WorldCreation {
 		return bullsEye;
 	}
 
-	public ArrayList<Wood> getWoods() {
+	public List<Wood> getWoods() {
 		return woods;
 	}
 
-	public ArrayList<Wave> getWaves() {
+	public List<Wave> getWaves() {
 		return waves;
 	}
 
-	public ArrayList<Levels> getLevels() {
+	public List<Levels> getLevels() {
 		return levels;
 	}
 
-	public ArrayList<Gun> getGunA() {
+	public List<Gun> getGunA() {
 		return gunA;
 	}
 
-	public ArrayList<Gun> getGunB() {
+	public List<Gun> getGunB() {
 		return gunB;
 	}
 
-	public ArrayList<Gun> getGunC() {
+	public List<Gun> getGunC() {
 		return gunC;
 	}
 
-	public ArrayList<Duck> getDuckLeft() {
+	public List<Duck> getDuckLeft() {
 		return duckLeft;
 	}
 
-	public ArrayList<Duck> getDuckRight() {
+	public List<Duck> getDuckRight() {
 		return duckRight;
 	}
 	
@@ -540,20 +588,20 @@ public class WorldCreation {
 		return state;
 	}
 	
-	public ArrayList<Integer> getStateIteratorL(){
+	public List<Integer> getStateIteratorL(){
 		return stateIteratorL;
 	}
 	
-	public ArrayList<Integer> getStateIteratorR(){
+	public List<Integer> getStateIteratorR(){
 		return stateIteratorR;
 	}
 	
 	public BufferedImage getDuckStatesL(int state){
-		return duckStatesL[state];
+		return duckStatesL.get(state);
 	}
 
 	public BufferedImage getDuckStatesR(int state){
-		return duckStatesR[state];
+		return duckStatesR.get(state);
 	}
 	
 	public BufferedImage getScoreStick() {
@@ -564,11 +612,11 @@ public class WorldCreation {
 		return scoreFive;
 	}
 
-	public ArrayList<Ammo> getAmmos() {
+	public List<Ammo> getAmmos() {
 		return ammos;
 	}
 
-	public ArrayList<Integer> getAmmoStorage() {
+	public List<Integer> getAmmoStorage() {
 		return ammoStorage;
 	}
 
