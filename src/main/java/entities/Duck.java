@@ -1,7 +1,7 @@
 package entities;
 
 import java.awt.Rectangle;
-public class Duck extends Entities{
+public class Duck extends GameObjects {
 	
 	public boolean alive;
 	private int life = 0;
@@ -10,6 +10,7 @@ public class Duck extends Entities{
 	public Duck(int xPos, int yPos){
 		setX(xPos);
 		setY(yPos);
+		this.alive = true;
 	}
 	
 	public void setAlive(boolean alive){

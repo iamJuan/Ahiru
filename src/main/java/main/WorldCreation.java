@@ -65,16 +65,16 @@ public class WorldCreation {
 			//create objects for splash screen/first scene
 			createBackground("backgroundintro");
 
-			setSplashScreen();
+			splashScreen = new SplashScreen();
 
-			createMenu();
+			menu = new MainMenu();
 			
 		}else if(scene == SCENE_LEVEL_SELECTION){
 			showScreenState("levelSelect.txt");
 			//create objects for level selection
 			createBackground("levelselectbg");
 
-			createInstruction();
+			instruction = new Instruction();
 
 			createLevels();
 			
@@ -87,15 +87,19 @@ public class WorldCreation {
 
 			createScoreStick();
 
-			createScoreBoard();
+			scoreBoard = new ScoreBoard();
 
-			createPauseBoard();
+			pauseBoard = new PauseBoard();
 
-			createLevelNoDisplay();
+			lvlNo = new LevelNumber[2];
+			lvlNo[0] = new LevelNumber("levelNumberZero", 640, 25);
+			lvlNo[1] = new LevelNumber("levelNumberZero", 655, 25);
 
-			createBestScore();
+			bestScore = new LevelNumber[2];
+			bestScore[0] = new LevelNumber("levelNumberZero", 430, 240);
+			bestScore[1] = new LevelNumber("levelNumberZero", 445, 240);
 
-			createGameProgress();
+			gameProgress = new GameProgress();
 			
 			createDuckStates();
 			setGame(currentLevel);
@@ -105,57 +109,9 @@ public class WorldCreation {
 		}
 	}//end of load(Scene)w
 
-	private void createGameProgress() {
-		gameProgress = new GameProgress();
-		gameProgress.create("gameProgress");
-		gameProgress.setX(660);
-		gameProgress.setY(75);
-	}
-
-	private void createBestScore() {
-		bestScore = new LevelNumber[2];
-
-		bestScore[0] = new LevelNumber();
-		bestScore[0].create("levelNumberZero");
-		bestScore[0].setX(430);
-		bestScore[0].setY(240);
-
-		bestScore[1] = new LevelNumber();
-		bestScore[1].create("levelNumberZero");
-		bestScore[1].setX(445);
-		bestScore[1].setY(240);
-	}
-
-	private void createPauseBoard() {
-		pauseBoard = new PauseBoard();
-		pauseBoard.create("paused");
-		pauseBoard.setX(140);
-		pauseBoard.setY(150);
-	}
-
-	private void createScoreBoard() {
-		scoreBoard = new ScoreBoard();
-		scoreBoard.setX(140);
-		scoreBoard.setY(150);
-	}
-
 	private void createScoreStick() {
 		scoreStick = imgLoader.getImage("stick");
 		scoreFive  = imgLoader.getImage("stick5");
-	}
-
-	private void createLevelNoDisplay() {
-		lvlNo = new LevelNumber[2];
-
-		lvlNo[0] = new LevelNumber();
-		lvlNo[0].create("levelNumberZero");
-		lvlNo[0].setX(640);
-		lvlNo[0].setY(25);
-
-		lvlNo[1] = new LevelNumber();
-		lvlNo[1].create("levelNumberZero");
-		lvlNo[1].setX(655);
-		lvlNo[1].setY(25);
 	}
 
 	private void createLevels() {
@@ -177,30 +133,8 @@ public class WorldCreation {
 		}
 	}
 
-	private void createInstruction() {
-		instruction = new Instruction();
-		instruction.create("inst"+instruction.getCurrentPage());
-		instruction.setX(0);
-		instruction.setY(0);
-	}
-
-	private void createMenu() {
-		menu = new MainMenu();
-		menu.create("play");
-		menu.setX(250);
-		menu.setY(370);
-	}
-
-	private void setSplashScreen() {
-		splashScreen = new SplashScreen();
-		splashScreen.create("splashScreen");
-		splashScreen.setX(100);
-		splashScreen.setY(50);
-	}
-
 	private void createBackground(String backgroundintro) {
-		background = new Background();
-		background.create(backgroundintro);
+		background = new Background(backgroundintro);
 	}
 
 	private void showScreenState(String s) {
@@ -232,19 +166,19 @@ public class WorldCreation {
 		int ice = ammoStored[currentLevel-1][2];
 
 		
-		ammos.add(new Ice(550, 550));
+		ammos.add(new AmmoIce(550, 550));
 		ammos.get(0).setRectangleHeight(50);
 		ammos.get(0).setRectangleWidth(50);
 		ammos.get(0).create("displayIce");
 		ammoStorage.add(ice);
 		
-		ammos.add(new AP(600, 550));
+		ammos.add(new AmmoAP(600, 550));
 		ammos.get(1).setRectangleHeight(50);
 		ammos.get(1).setRectangleWidth(50);
 		ammos.get(1).create("displayAP");
 		ammoStorage.add(ap);
 		
-		ammos.add(new Ball(650, 550));
+		ammos.add(new AmmoBall(650, 550));
 		ammos.get(2).setRectangleHeight(35);
 		ammos.get(2).setRectangleWidth(35);
 		ammos.get(2).create("displayBall");
@@ -347,55 +281,38 @@ public class WorldCreation {
 	}//createDucks
 
 	private void setupDucks(int iterDuckType, int lane) {
-		int life = 0;
-		int speed = 0;
 		int distance = 0;
-		String imageName = "", number = "";
+		String number = "";
 
 		if(iterDuckType == EASY){
-			life = 1;
-			speed = 2;
+			number = "";
 			distance = 200;
-			imageName = EASY_DUCK;
-			number = "";
 		}else if(iterDuckType == HELM){
-			life = 2;
-			speed = 2;
+			number = "";
 			distance = 300;
-			imageName = HELM_DUCK;
-			number = "";
 		}else if(iterDuckType == KNIGHT){
-			life = 3;
-			speed = 2;
-			distance = 400;
-			imageName = KNIGHT_DUCK;
 			number = "1";
+			distance = 400;
 		}else if(iterDuckType == CLOWN){
-			life = 1;
-			speed = 3;
-			distance = 700;
-			imageName = CLOWN_DUCK;
 			number = "";
+			distance = 700;
 		}
 
-		int rightOrLeft = rand.nextInt(2)+1;//generate a random number( 1 or 2) left or right
+		int direction = rand.nextInt(2)+1;//generate a random number( 1 or 2) left or right
 
-		if(rightOrLeft == 1){//if 1 is generated, a duck facing left will be created.
+		if(direction == FACE_LEFT){//if 1 is generated, a duck facing left will be created.
 
 			if(iterDuckType == EASY){
-				duckLeft.add(DuckFactory.getDuck(EASY_DUCK,1200, lane));//create and add a new Duck Object
+				duckLeft.add(DuckFactory.of().getDuck(EASY_DUCK,1200, lane));//create and add a new Duck Object
 			}else if(iterDuckType == HELM){
-				duckLeft.add(DuckFactory.getDuck(HELM_DUCK,1200, lane));//create and add a new Duck Object
+				duckLeft.add(DuckFactory.of().getDuck(HELM_DUCK,1200, lane));//create and add a new Duck Object
 			}else if(iterDuckType == KNIGHT){
-				duckLeft.add(DuckFactory.getDuck(KNIGHT_DUCK,1200, lane));//create and add a new Duck Object
+				duckLeft.add(DuckFactory.of().getDuck(KNIGHT_DUCK,1200, lane));//create and add a new Duck Object
 			}else if(iterDuckType == CLOWN){
-				duckLeft.add(DuckFactory.getDuck(CLOWN_DUCK,1200, lane));//create and add a new Duck Object
+				duckLeft.add(DuckFactory.of().getDuck(CLOWN_DUCK,1200, lane));//create and add a new Duck Object
 			}
 
-			duckLeft.get(duckPopulationL).setAlive(true);
-			duckLeft.get(duckPopulationL).setLife(life);
-			duckLeft.get(duckPopulationL).create(imageName+"Left"+number);//get the prevAddedDuck and create its image
-			duckLeft.get(duckPopulationL).setSpeed(speed);
+			duckLeft.get(duckPopulationL).create(duckLeft.get(duckPopulationL).getImgSrcName()+"Left"+number);//get the prevAddedDuck and create its image
 			stateIteratorL.add(0);
 
 			//this will create the x-distances between ducks
@@ -406,22 +323,19 @@ public class WorldCreation {
 			duckPopulationL++;//add the population of duck facing left
 
 
-		}else if(rightOrLeft == 2){//same goes here
+		}else if(direction == FACE_RIGHT){//same goes here
 
 			if(iterDuckType == 0){
-				duckRight.add(DuckFactory.getDuck(EASY_DUCK,-1200, lane));//create and add a new Duck Object
+				duckRight.add(DuckFactory.of().getDuck(EASY_DUCK,-1200, lane));//create and add a new Duck Object
 			}else if(iterDuckType == 1){
-				duckRight.add(DuckFactory.getDuck(HELM_DUCK,-1200, lane));//create and add a new Duck Object
+				duckRight.add(DuckFactory.of().getDuck(HELM_DUCK,-1200, lane));//create and add a new Duck Object
 			}else if(iterDuckType == 2){
-				duckRight.add(DuckFactory.getDuck(KNIGHT_DUCK,-1200, lane));//create and add a new Duck Object
+				duckRight.add(DuckFactory.of().getDuck(KNIGHT_DUCK,-1200, lane));//create and add a new Duck Object
 			}else if(iterDuckType == 3){
-				duckRight.add(DuckFactory.getDuck(CLOWN_DUCK,-1200, lane));//create and add a new Duck Object
+				duckRight.add(DuckFactory.of().getDuck(CLOWN_DUCK,-1200, lane));//create and add a new Duck Object
 			}
 
-			duckRight.get(duckPopulationR).setAlive(true);
-			duckRight.get(duckPopulationR).setLife(life);
-			duckRight.get(duckPopulationR).create(imageName+"Right"+number);
-			duckRight.get(duckPopulationR).setSpeed(speed);
+			duckRight.get(duckPopulationR).create(duckRight.get(duckPopulationR).getImgSrcName()+"Right"+number);
 			stateIteratorR.add(0);
 
 			if(duckPopulationR > 0){

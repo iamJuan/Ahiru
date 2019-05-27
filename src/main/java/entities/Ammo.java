@@ -4,7 +4,7 @@ import java.awt.Rectangle;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
-public class Ammo extends Entities{
+public class Ammo extends GameObjects {
 	
 	private int rWidth = 0;
 	private int rHeight = 0;

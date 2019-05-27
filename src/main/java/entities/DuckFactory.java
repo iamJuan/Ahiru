@@ -4,16 +4,21 @@ import static utilities.GameConstants.*;
 
 public class DuckFactory {
 
-    public static Duck getDuck(String duckType, int xPos, int lane){
-        Duck duck = null;
+    private DuckFactory(){}
+
+    public static DuckFactory of(){
+        return new DuckFactory();
+    }
+
+    public Duck getDuck(String duckType, int xPos, int lane){
         if (EASY_DUCK.equalsIgnoreCase(duckType)){
-            duck = new EasyDuck(xPos, lane);
+            return new DuckEasy(xPos, lane);
         }else if(HELM_DUCK.equalsIgnoreCase(duckType)){
-            duck = new HelmDuck(xPos, lane);
+            return new DuckHelm(xPos, lane);
         }else if(KNIGHT_DUCK.equalsIgnoreCase(duckType)){
-            duck = new KnightDuck(xPos, lane);
+            return new DuckKnight(xPos, lane);
         }else if(CLOWN_DUCK.equalsIgnoreCase(duckType)){
-            duck = new ClownDuck(xPos, lane);
+            return new DuckClown(xPos, lane);
         }else{
             try {
                 throw new Exception();
@@ -22,6 +27,6 @@ public class DuckFactory {
             }
         }
 
-        return duck;
+        return null;
     }
 }

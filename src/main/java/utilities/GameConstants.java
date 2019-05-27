@@ -13,4 +13,9 @@ public class GameConstants {
     public static final int SCENE_SPLASH = 1;
     public static final int SCENE_LEVEL_SELECTION = 2;
     public static final int SCENE_LEVEL = 3;
+
+    public static final int FACE_LEFT = 1;
+    public static final int FACE_RIGHT = 2;
+
+
 }

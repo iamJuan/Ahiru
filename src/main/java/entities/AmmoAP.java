@@ -2,11 +2,10 @@ package entities;
 
 import java.awt.Rectangle;
 
-public class Ice extends Ammo{
+public class AmmoAP extends Ammo{
 
-	public Ice(int xPos, int yPos) {
+	public AmmoAP(int xPos, int yPos) {
 		super(xPos, yPos);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
