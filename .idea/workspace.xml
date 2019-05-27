@@ -2,226 +2,234 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e6ac99-c50f-4965-a5c2-64be73015886" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/audio/ap.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/ap.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/ball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/ball.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/boo1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/boo1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/boo2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/boo2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/boo3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/boo3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/changeAmmo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/changeAmmo.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/crowd.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/crowd.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/helm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/helm.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/ice.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/ice.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/iceCracking.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/iceCracking.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/missed.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/net.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/net.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/pressed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/pressed.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/woodHit.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audio/woodHit.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/AP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/AP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/Ammo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Ammo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/BullsEye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/BullsEye.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/ClownDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/ClownDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Duck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/EasyDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/EasyDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/Entities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Entities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/GameProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/GameProgress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/Gun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Gun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/HelmDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/HelmDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/Ice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Ice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/KnightDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/KnightDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/entities/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/main/Ahiru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Ahiru.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/main/AhiruPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/AhiruPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/main/WorldCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/WorldCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/settings/Wave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/Wave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/settings/Wood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/Wood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/settings/WoodUpper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/WoodUpper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/EmptyStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/EmptyStar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/FullStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/FullStar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/LevelNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/LevelNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/Levels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/PauseBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/PauseBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/ScoreBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/Stars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/Stars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/userinterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ImageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/LineIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/LineIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/MouseListenerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/MouseListenerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/SaveAndLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/SaveAndLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/SoundLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/SoundLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/level9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/levelSelect.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/levelSelect.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/loading.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/loading.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/sounds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sounds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/johngori/games/ahiru/utilities/splashScreen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/splashScreen.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/ap.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/ap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/backgroundintro.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/backgroundintro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/ball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/bestScoreBoard0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/bestScoreBoard0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/bestScoreBoard1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/bestScoreBoard1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/bestScoreBoard2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/bestScoreBoard2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/bestScoreBoard3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/bestScoreBoard3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/bullsEye.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/bullsEye.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/clownLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/clownLeft.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/clownRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/clownRight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/displayAP.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/displayAP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/displayBall.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/displayBall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/displayIce.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/displayIce.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyLeft.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyLeftFallen1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyLeftFallen1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyLeftFallen2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyLeftFallen2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyLeftFallen3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyLeftFallen3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyLeftFallen4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyLeftFallen4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyLeftFallen5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyLeftFallen5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyLeftFallen6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyLeftFallen6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyRight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyRightFallen1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyRightFallen1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyRightFallen2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyRightFallen2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyRightFallen3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyRightFallen3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyRightFallen4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyRightFallen4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyRightFallen5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyRightFallen5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyRightFallen6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyRightFallen6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/easyduck.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/easyduck.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/eight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/eight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/emptyStar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/emptyStar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/five.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/five.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/four.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/four.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gameProgress.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gameProgress.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gun.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gun.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunCenter1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunCenter1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunCenter2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunCenter2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunCenter3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunCenter3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunCenter4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunCenter4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftA1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftA1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftA2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftA2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftA3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftA3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftA4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftA4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftA5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftA5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftB1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftB1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftB2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftB2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftB3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftB3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftB4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftB4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftB5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftB5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftC1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftC1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftC2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftC2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftC3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftC3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftC4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftC4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunLeftC5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunLeftC5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightA1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightA1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightA2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightA2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightA3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightA3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightA4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightA4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightA5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightA5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightB1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightB1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightB2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightB2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightB3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightB3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightB4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightB4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightB5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightB5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightC1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightC1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightC2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightC2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightC3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightC3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightC4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightC4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/gunRightC5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/gunRightC5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/helmDuck.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/helmDuck.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/helmLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/helmLeft.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/helmRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/helmRight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/ice.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/ice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/icy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/icy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/inst1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/inst1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/inst2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/inst2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/inst3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/inst3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/inst4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/inst4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/inst5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/inst5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/inst6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/inst6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/knightLeft1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/knightLeft1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/knightLeft2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/knightLeft2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/knightRight1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/knightRight1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/knightRight2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/knightRight2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumber9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumber9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelNumberZero.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelNumberZero.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/levelselectbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/levelselectbg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loading.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loading.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loadingDuck1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loadingDuck1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loadingDuck2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loadingDuck2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loadingDuck3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loadingDuck3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loadingDuck4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loadingDuck4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loadingDuck5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loadingDuck5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loadingDuck6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loadingDuck6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/loadingDuck7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/loadingDuck7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/lvl9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/lvl9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/nine.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/nine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/one.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/one.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/paused.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/paused.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/redLine.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/redLine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/rock.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/rock.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/seven.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/seven.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/six.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/six.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/splashScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/splashScreen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/stick.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/stick.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/stick5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/stick5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/three.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/three.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/two.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/two.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/wave1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/wave1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/waveIced.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/waveIced.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/wood1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/wood1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/woodUpper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/woodUpper.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/zero.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gfx/zero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/ap.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/ball.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/boo1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/boo2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/boo3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/changeAmmo.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/crowd.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/helm.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/ice.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/iceCracking.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/missed.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/net.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/pressed.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audio/woodHit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/AP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Ammo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Ball.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/BullsEye.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/ClownDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Duck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/EasyDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Entities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/GameProgress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Gun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/HelmDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Ice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/KnightDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/ap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/backgroundintro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/ball.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/bestScoreBoard0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/bestScoreBoard1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/bestScoreBoard2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/bestScoreBoard3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/bullsEye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/clownLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/clownRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/displayAP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/displayBall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/displayIce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyLeftFallen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyLeftFallen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyLeftFallen3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyLeftFallen4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyLeftFallen5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyLeftFallen6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyRightFallen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyRightFallen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyRightFallen3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyRightFallen4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyRightFallen5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyRightFallen6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/easyduck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/eight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/emptyStar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/five.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/four.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gameProgress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunCenter1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunCenter2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunCenter3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunCenter4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftA1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftA2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftA3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftA4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftA5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftB1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftB2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftB3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftB4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftB5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftC1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftC2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftC3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftC4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunLeftC5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightA1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightA2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightA3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightA4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightA5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightB1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightB2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightB3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightB4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightB5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightC1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightC2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightC3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightC4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/gunRightC5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/helmDuck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/helmLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/helmRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/ice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/icy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/inst1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/inst2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/inst3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/inst4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/inst5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/inst6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/knightLeft1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/knightLeft2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/knightRight1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/knightRight2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumber9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelNumberZero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/levelselectbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loadingDuck1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loadingDuck2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loadingDuck3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loadingDuck4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loadingDuck5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loadingDuck6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/loadingDuck7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/lvl9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/nine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/paused.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/redLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/rock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/seven.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/six.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/splashScreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/stick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/stick5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/three.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/two.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/wave1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/waveIced.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/wood1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/woodUpper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gfx/zero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/level9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/levelSelect.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/loading.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/Ahiru$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/Ahiru.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/AhiruPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/AhiruPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/AhiruPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/AhiruPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/WorldCreation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/Wave.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/Wood.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/WoodUpper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sounds.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/splashScreen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/Background.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/EmptyStar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/FullStar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/Instruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/LevelNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/Levels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/MainMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/PauseBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/ScoreBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/SplashScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/Stars.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/userinterface/UserInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ImageLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/LineIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/MouseListenerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/SaveAndLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/SoundLoader$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/SoundLoader.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Ahiru.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/Ahiru.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/WorldCreation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="17">
+              <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,45 +237,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AhiruPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/AhiruPanel.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/userinterface/Levels.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="1191" selection-start-line="1191" selection-end-line="1191" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/settings/Settings.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/awt/Image.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-              <folding>
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3876">
+              <caret line="258" column="16" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/userinterface/UserInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageLoader.java" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utilities/ImageLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="2040">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -275,50 +267,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputStreamReader.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/io/InputStreamReader.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="6698">
+              <caret line="432" selection-start-line="432" selection-end-line="432" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/State.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/AhiruPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="6766">
+              <caret line="424" selection-start-line="424" selection-end-line="424" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveAndLoad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/SaveAndLoad.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Duck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="172" column="79" selection-start-line="172" selection-start-column="79" selection-end-line="172" selection-end-column="79" />
+            <state relative-caret-position="153">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loading.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/loading.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entities/EasyDuck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding>
+                <element signature="e#93#94#0" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../../React JS with Spring" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../React JS with Spring/tutorial" value="PREVIEW" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -353,54 +348,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ahiru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ahiru" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ahiru" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ahiru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ahiru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ahiru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ahiru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ahiru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ahiru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ahiru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ahiru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ahiru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ahiru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -437,47 +402,31 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -498,41 +447,41 @@
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="23000" />
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="DB Browser" />
-      <window_info anchor="bottom" id="Messages" weight="0.3297414" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297414" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914712" visible="true" weight="0.21972133" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3297414" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -544,7 +493,6 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -581,8 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/WorldCreation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+        <state relative-caret-position="17">
+          <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -601,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/AhiruPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="1191" selection-start-line="1191" selection-end-line="1191" />
+        <state relative-caret-position="6766">
+          <caret line="424" selection-start-line="424" selection-end-line="424" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -641,9 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/loading.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -659,8 +604,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utilities/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="2040">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

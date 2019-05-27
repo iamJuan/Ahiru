@@ -1,3 +1,0 @@
-o backgroundintro.png
-o splashScreen.png
-o play.png
