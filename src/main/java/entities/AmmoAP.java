@@ -4,8 +4,16 @@ import java.awt.Rectangle;
 
 public class AmmoAP extends Ammo{
 
-	public AmmoAP(int xPos, int yPos) {
-		super(xPos, yPos);
+	public AmmoAP() {
+		setX(600);
+		setY(550);
+		setRectangleHeight(50);
+		setRectangleWidth(50);
+		create("displayAP");
+	}
+
+	public AmmoAP(int x, int y){
+		super(x, y);
 	}
 
 	@Override

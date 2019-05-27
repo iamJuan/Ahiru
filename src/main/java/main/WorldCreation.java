@@ -165,23 +165,13 @@ public class WorldCreation {
 		int ap = ammoStored[currentLevel-1][1];
 		int ice = ammoStored[currentLevel-1][2];
 
-		
-		ammos.add(new AmmoIce(550, 550));
-		ammos.get(0).setRectangleHeight(50);
-		ammos.get(0).setRectangleWidth(50);
-		ammos.get(0).create("displayIce");
+		ammos.add(new AmmoIce());
 		ammoStorage.add(ice);
 		
-		ammos.add(new AmmoAP(600, 550));
-		ammos.get(1).setRectangleHeight(50);
-		ammos.get(1).setRectangleWidth(50);
-		ammos.get(1).create("displayAP");
+		ammos.add(new AmmoAP());
 		ammoStorage.add(ap);
 		
-		ammos.add(new AmmoBall(650, 550));
-		ammos.get(2).setRectangleHeight(35);
-		ammos.get(2).setRectangleWidth(35);
-		ammos.get(2).create("displayBall");
+		ammos.add(new AmmoBall());
 		ammoStorage.add(ball);
 	}
 
@@ -273,9 +263,7 @@ public class WorldCreation {
 				int laneNo = getLaneNo(currentLevel);
 				int lane = getLane(laneNo);
 
-
 				setupDucks(iterDuckType, lane);
-
 			}
 		}
 	}//createDucks

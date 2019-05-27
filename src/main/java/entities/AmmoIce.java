@@ -4,8 +4,16 @@ import java.awt.Rectangle;
 
 public class AmmoIce extends Ammo{
 
-	public AmmoIce(int xPos, int yPos) {
-		super(xPos, yPos);
+	public AmmoIce() {
+		setX(550);
+		setY(550);
+		setRectangleHeight(50);
+		setRectangleWidth(50);
+		create("displayIce");
+	}
+
+	public AmmoIce(int x, int y){
+		super(x, y);
 	}
 
 	@Override
