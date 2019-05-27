@@ -1,6 +1,6 @@
 package entities;
 
-public class Gun extends Entities{
+public class Gun extends GameObjects {
 	
 	public Gun(){
 		setX(248);

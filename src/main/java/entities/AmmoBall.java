@@ -2,10 +2,18 @@ package entities;
 
 import java.awt.Rectangle;
 
-public class Ball extends Ammo{
+public class AmmoBall extends Ammo{
 	
-	public Ball(int xPos, int yPos) {
-		super(xPos, yPos);
+	public AmmoBall() {
+		setX(650);
+		setY(550);
+		setRectangleHeight(35);
+		setRectangleWidth(35);
+		create("displayBall");
+	}
+
+	public AmmoBall(int x, int y){
+		super(x, y);
 	}
 	
 	@Override

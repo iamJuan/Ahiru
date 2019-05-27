@@ -6,16 +6,17 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 
-abstract class Entities {
+abstract class GameObjects {
 
 	private int x;
 	private int y;
 	private BufferedImage image;
-	
+	private String imgSrcName;
+
 	public void create(String name) {
 		image = WorldCreation.getImageLoader().getImage(name);
 	}
-	
+
 	public void draw(Graphics g) {
 		g.drawImage(image, getX(), getY(), null);
 	}
@@ -35,9 +36,21 @@ abstract class Entities {
 	public int getY() {
 		return y;
 	}
-	
+
 	public void setImage(BufferedImage image){
 		this.image = image;
+	}
+
+	public BufferedImage getImage(){
+		return image;
+	}
+
+	public String getImgSrcName() {
+		return imgSrcName;
+	}
+
+	public void setImgSrcName(String imgSrcName) {
+		this.imgSrcName = imgSrcName;
 	}
 	
 }

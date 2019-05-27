@@ -2,11 +2,18 @@ package entities;
 
 import java.awt.Rectangle;
 
-public class Ice extends Ammo{
+public class AmmoAP extends Ammo{
 
-	public Ice(int xPos, int yPos) {
-		super(xPos, yPos);
-		// TODO Auto-generated constructor stub
+	public AmmoAP() {
+		setX(600);
+		setY(550);
+		setRectangleHeight(50);
+		setRectangleWidth(50);
+		create("displayAP");
+	}
+
+	public AmmoAP(int x, int y){
+		super(x, y);
 	}
 
 	@Override

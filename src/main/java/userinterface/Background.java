@@ -3,6 +3,10 @@ package userinterface;
 import java.awt.Rectangle;
 
 public class Background extends UserInterface{
+
+	public Background(String backgroundintro){
+		create(backgroundintro);
+	}
 	
 	public Rectangle getBounds1(){
 		Rectangle r;

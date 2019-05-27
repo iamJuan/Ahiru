@@ -4,6 +4,14 @@ import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 
 public class Instruction extends UserInterface{
+
+	public Instruction(){
+
+		create("inst"+getCurrentPage());
+		setX(0);
+		setY(0);
+	}
+
 	private int page = 1;
 	@SuppressWarnings("unused")
 	private BufferedImage image;

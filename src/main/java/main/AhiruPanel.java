@@ -15,10 +15,7 @@ import java.awt.event.MouseMotionAdapter;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Random;
+import java.util.*;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -54,7 +51,7 @@ public class AhiruPanel extends JPanel implements Runnable{
 	private final int GUN_LANE_4 = 3;
 	
 	private final int SCENE_SPLASH = 1;
-	private final int SCENE_LEVELSELECTION = 2;
+	private final int SCENE_LEVEL_SELECTION = 2;
 	private final int SCENE_LEVEL = 3;
 
 	private double rate = 0.0;
@@ -89,12 +86,12 @@ public class AhiruPanel extends JPanel implements Runnable{
 	//entities
 	private WorldCreation worldCreated;
 	
-	private ArrayList<Gun> currentGun;
-	private ArrayList<Gun> gunA; 
-	private ArrayList<Gun> gunB; 
-	private ArrayList<Gun> gunC; 
-	private ArrayList<Ammo> shots;
-	private ArrayList<Score> scoreBoard;
+	private List<Gun> currentGun;
+	private List<Gun> gunA;
+	private List<Gun> gunB;
+	private List<Gun> gunC;
+	private List<Ammo> shots;
+	private List<Score> scoreBoard;
 	private HashMap<String,Integer> iceTimer;
 	private int[] starCount;
 	private HashMap<Integer, Stars[]> starMap;
@@ -102,9 +99,9 @@ public class AhiruPanel extends JPanel implements Runnable{
 	private Ammo currentAmmo;
 	private int currentAmmoNumber;
 	private int openedLevels = 1;
-	private Ammo ball = new Ball(0,0);
-	private Ammo ap = new AP(0,0);
-	private Ammo ice = new Ice(0,0);
+	private Ammo ball = new AmmoBall(0,0);
+	private Ammo ap = new AmmoAP(0,0);
+	private Ammo ice = new AmmoIce(0,0);
 		
 	private ImageLoader imgLoader;
 	private SoundLoader soundLoader;
@@ -162,12 +159,12 @@ public class AhiruPanel extends JPanel implements Runnable{
 						soundLoader.playFX("pressed");
 						
 						worldCreated.unload(scene);
-						worldCreated.load(SCENE_LEVELSELECTION, currentLevel);
-						scene = SCENE_LEVELSELECTION;
+						worldCreated.load(SCENE_LEVEL_SELECTION, currentLevel);
+						scene = SCENE_LEVEL_SELECTION;
 						gameStarted = true;
 						
 						reloadRatings();
-					}else if(scene == SCENE_LEVELSELECTION){
+					}else if(scene == SCENE_LEVEL_SELECTION){
 						//levelselect: what level does the user want to play
 						openedLevels = SaveAndLoad.getLevels();
 						currentAmmo = ball;
@@ -293,7 +290,7 @@ public class AhiruPanel extends JPanel implements Runnable{
 								if(currentAmmo == ball){
 	
 									soundLoader.playFX("ball");
-									shots.add(new Ball(0,0));
+									shots.add(new AmmoBall(0,0));
 									shots.get(noOfShots).setRectangleWidth(10);
 									shots.get(noOfShots).setRectangleHeight(10);
 									shots.get(noOfShots).create("ball");
@@ -301,7 +298,7 @@ public class AhiruPanel extends JPanel implements Runnable{
 								}else if(currentAmmo == ap){
 	
 									soundLoader.playFX("ap");
-									shots.add(new AP(0,0));
+									shots.add(new AmmoAP(0,0));
 									shots.get(noOfShots).setRectangleWidth(10);
 									shots.get(noOfShots).setRectangleHeight(10);
 									shots.get(noOfShots).create("ap");
@@ -309,7 +306,7 @@ public class AhiruPanel extends JPanel implements Runnable{
 								}else if(currentAmmo == ice){
 	
 									soundLoader.playFX("ice");
-									shots.add(new Ice(0,0));
+									shots.add(new AmmoIce(0,0));
 									shots.get(noOfShots).setRectangleWidth(10);
 									shots.get(noOfShots).setRectangleHeight(10);
 									shots.get(noOfShots).create("ice");
@@ -376,8 +373,8 @@ public class AhiruPanel extends JPanel implements Runnable{
 								soundLoader.playFX("pressed");
 								nullify();
 								
-								worldCreated.load(SCENE_LEVELSELECTION, currentLevel);
-								scene = SCENE_LEVELSELECTION;
+								worldCreated.load(SCENE_LEVEL_SELECTION, currentLevel);
+								scene = SCENE_LEVEL_SELECTION;
 	
 	
 								currentAmmo = ball;
@@ -404,8 +401,8 @@ public class AhiruPanel extends JPanel implements Runnable{
 								soundLoader.playFX("pressed");
 								nullify();
 								
-								worldCreated.load(SCENE_LEVELSELECTION, currentLevel);
-								scene = SCENE_LEVELSELECTION;
+								worldCreated.load(SCENE_LEVEL_SELECTION, currentLevel);
+								scene = SCENE_LEVEL_SELECTION;
 								resumeGame();
 	
 								currentAmmo = ball;
@@ -801,11 +798,11 @@ public class AhiruPanel extends JPanel implements Runnable{
 					}
 					
 					if(!isIced){
-						if(duck.getClass() == ClownDuck.class)
+						if(duck.getClass() == DuckClown.class)
 							duck.setSpeed(3);
-						else if(duck.getClass() == HelmDuck.class)
+						else if(duck.getClass() == DuckHelm.class)
 							duck.setSpeed(2);
-						else if(duck.getClass() == KnightDuck.class)
+						else if(duck.getClass() == DuckKnight.class)
 							duck.setSpeed(2);
 					}
 					
@@ -845,9 +842,9 @@ public class AhiruPanel extends JPanel implements Runnable{
 					}
 					
 					if(!isIced){
-						if(duck.getClass() == ClownDuck.class)
+						if(duck.getClass() == DuckClown.class)
 							duck.setSpeed(3);
-						else if(duck.getClass() == HelmDuck.class)
+						else if(duck.getClass() == DuckHelm.class)
 							duck.setSpeed(2);
 					}
 					
@@ -1004,7 +1001,7 @@ public class AhiruPanel extends JPanel implements Runnable{
 				dbg.drawString("Programmer/Artist: John G. Aparejado", 450, 550);
 				
 				
-			}else if(scene == SCENE_LEVELSELECTION && gameStarted && !isPlaying){
+			}else if(scene == SCENE_LEVEL_SELECTION && gameStarted && !isPlaying){
 				//draws only the level select elements
 				worldCreated.getBackground().draw(dbg);
 				

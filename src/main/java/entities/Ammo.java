@@ -4,7 +4,7 @@ import java.awt.Rectangle;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
-public class Ammo extends Entities{
+public class Ammo extends GameObjects {
 	
 	private int rWidth = 0;
 	private int rHeight = 0;
@@ -12,9 +12,11 @@ public class Ammo extends Entities{
 	private ArrayList<Point2D> path = null;
 	private int power = 0;
 	
-	public Ammo(int xPos, int yPos){
-		setX(xPos);
-		setY(yPos);
+	public Ammo(){}
+
+	public Ammo(int x, int y){
+		setX(x);
+		setY(y);
 	}
 	
 	public Rectangle getBounds(){

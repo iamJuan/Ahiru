@@ -4,6 +4,12 @@ import java.awt.Rectangle;
 
 public class PauseBoard extends UserInterface{
 
+	public PauseBoard(){
+		create("paused");
+		setX(140);
+		setY(150);
+	}
+
 	public Rectangle getBounds1(){
 		Rectangle r;
 		r = new Rectangle(getX()+325, getY()+27, 40, 40);
